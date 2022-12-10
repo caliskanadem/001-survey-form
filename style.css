@@ -81,7 +81,12 @@ textarea {
 }
 .radio {
   accent-color: rgb(38, 117, 213);
+  cursor: pointer;
 }
 .check {
   accent-color: rgb(38, 117, 213);
+  cursor: pointer;
+}
+.inlabel {
+  cursor: pointer;
 }
