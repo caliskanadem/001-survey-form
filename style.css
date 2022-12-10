@@ -90,3 +90,6 @@ textarea {
 .inlabel {
   cursor: pointer;
 }
+select {
+  padding-left: 10px;
+}
