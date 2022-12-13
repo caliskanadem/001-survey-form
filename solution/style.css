@@ -1,95 +1,82 @@
+@import url("https://fonts.googleapis.com/css2?family=Bowlby+One+SC&family=Sorts+Mill+Goudy:ital@1&display=swap");
 * {
   margin: 0;
-  border: 0;
+  padding: 0;
   box-sizing: border-box;
 }
 body {
-  background-image: url(background_image.jpg);
-  /* background-size:auto; */
-  background-repeat: no-repeat;
+  color: white;
+  background-image: url(./img/netflix-background-image_1_720.png);
   background-position: center;
-  /* height: 100vh; */
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  background-size: cover;
+  background-repeat: none;
 }
-h1 {
-  font-family: "Sigmar One", cursive;
+#container {
+  max-width: 1240px;
+  /* height: 1036px; */
+  background-color: rgba(0, 0, 0, 0.3);
+  margin: auto;
+  margin-top: 30px;
+  padding: 1px;
+}
+#title {
+  font-size: 3.1rem;
   color: white;
+  font-family: "Bowlby One SC", cursive;
+  letter-spacing: 0.05em;
 }
-h4 {
-  color: white;
-  font-weight: 100;
-  padding-bottom: 5px;
+span {
+  color: red;
 }
-form {
-  text-align: left;
-  padding: 5px 20px 10px 20px;
-  width: 330px;
-  color: white;
-  background-color: rgba(0, 0, 0, 0.8);
+#description {
+  font-family: "Sorts Mill Goudy", serif;
 }
-.container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  width: 1000px;
-  background-color: rgba(0, 0, 0, 0.5);
-  margin-top: 20px;
-}
-.input-area {
-  width: 100%;
-  height: 40px;
-  margin-bottom: 10px;
-  margin-top: 10px;
-}
-.div-check {
-  margin-bottom: 10px;
-  font-size: 14px;
-}
-.div-radio {
-  margin-bottom: 10px;
-  font-size: 14px;
-}
-.div-button {
-  /* margin-left: 80px; */
+#header {
   text-align: center;
 }
-.button {
+textarea {
+  resize: none;
+}
+#survey-form-container {
+  /* border: 2px solid red; */
+  width: 500px;
+  background-color: rgba(0, 0, 0, 0.8);
+  margin: auto;
+  padding: 30px 40px;
+  margin-bottom: 40px;
+}
+
+#name,
+#age,
+#email,
+#dropdown,
+#feedback {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+}
+.input-box {
+  /* border: 2px solid red; */
+  margin-top: 10px;
+}
+#checkbox,
+#radio {
+  margin-top: 40px;
+  /* border: 2px solid red; */
+  accent-color: rgb(38, 117, 213);
+}
+#form-button {
+  width: 160px;
+  height: 45px;
   background-color: red;
   color: white;
-  cursor: pointer;
-  border-radius: 20px;
-  width: 100px;
-  height: 30px;
+  border: none;
+  border-radius: 50px;
   margin-top: 10px;
 }
-textarea {
-  margin-top: 10px;
-  padding-top: 5px;
-}
-::placeholder {
-  padding-left: 10px;
-  font-size: 10;
-}
-.global-label {
-  display: inline-block;
-  margin-top: 10px;
-  font-size: 14px;
-  font-family: "Roboto", sans-serif;
-}
-.radio {
-  accent-color: rgb(38, 117, 213);
-  cursor: pointer;
-}
-.check {
-  accent-color: rgb(38, 117, 213);
-  cursor: pointer;
-}
-.inlabel {
-  cursor: pointer;
-}
-select {
-  padding-left: 10px;
+.form-submit {
+  /* border: 2px solid blue; */
+  /* todo text-align: center;       /      cismi normal uzunlukta bir satira ortalar*/
+  width: 160px;
+  margin: auto; /*?     alanin boyutunu cismin boyutu ile esitledikten sonra cismi ortalar                      */
 }
